@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario Heroes</title>
+</head>
+
+<body>
+    <!--Encabezado Pagina-->
+    <h3>20% de descuento en todos los productos</h3>
+    <div class="encabezado">
+        <img src="img/Logo.png" alt="Logo tienda">
+        <h1>Nombre Tienda</h1>
+    </div>     
+
+    <header>
+        <nav>
+            <a href="" class="nav-link">Contacto</a>
+            <a href="" class="nav-link">Registrarme</a>
+            <a href="" class="nav-link">Ingresar</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Añadi tu super!</h2>
+        <p>Agregá tu personaje favorito completando las opciones.</p>
+
+        <form action="/registro" method="POST">
+            <label for="nombre">*Nombre</label>
+            <input type="text" name="nomre" id="nombre">
+        
+            <label for="especie">*Especie</label>
+            <select name="especie" id="especie" placeholder="Especie">
+                <option value="vill">Villano</option>
+                <option value="Heroe">Heroe</option>
+                <option value="Superheroe">Super Heroe</option>
+            </select>
+
+            <input type="date" id="start" name="trip-start" value="2018-01-01" min="1940-01-01" max="2021-12-31">
+
+            <label>Agregar Foto </label>
+            <input type="file" name="foto" accept=".jpg .png">
+            <label for="descripcion"></label>
+            <textarea name="textarea" rows="10" cols="50">Descripcion</textarea>
+
+            <input type="radio" name="tipo-personaje" value="Heroe">
+            <label for="Heroe">Heroe/Heroina</label>
+            <input type="radio" name="tipo-personaje" value="villano">
+            <label for="villano">Villano/Villana</label>
+
+            <button>Añadir</button>
+        
+        </form>
+    </section>
+
+    <footer>Todos los derechos reservados a FRONT END 1</footer>
+</body>
+</html>
